@@ -9,15 +9,23 @@
 import SwiftUI
 
 struct CircleImageView : View {
+    
+    var image: Image
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        image
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .clipShape(Circle())
+        .overlay(Circle().stroke(Color.white,lineWidth: 5))
+        .shadow(radius: 15)
     }
 }
 
 #if DEBUG
 struct CircleImageView_Previews : PreviewProvider {
     static var previews: some View {
-        CircleImageView()
+        CircleImageView(image: Image("londonbridge"))
     }
 }
 #endif

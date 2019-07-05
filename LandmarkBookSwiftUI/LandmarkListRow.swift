@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct LandmarkListRow : View {
+    
+    var landmark : Landmark
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            LandmarkListRowImage(landmarkImageName: landmark.imageName)
+            Text(landmark.name)
+        }
     }
 }
 
 #if DEBUG
 struct LandmarkListRow_Previews : PreviewProvider {
     static var previews: some View {
-        LandmarkListRow()
+        LandmarkListRow(landmark: londonBridgeLandmark)
     }
 }
 #endif
