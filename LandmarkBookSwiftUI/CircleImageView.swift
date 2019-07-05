@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CircleImageView.swift
 //  LandmarkBookSwiftUI
 //
 //  Created by Atil Samancioglu on 5.07.2019.
@@ -8,16 +8,16 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct CircleImageView : View {
     var body: some View {
-        Text("Hello World")
+        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct CircleImageView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CircleImageView()
     }
 }
 #endif
