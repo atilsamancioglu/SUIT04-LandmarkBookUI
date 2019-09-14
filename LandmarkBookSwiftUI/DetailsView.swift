@@ -27,7 +27,7 @@ struct DetailsView : View {
             VStack(alignment: .leading){
                 Text(chosenLandmark.name)
                 .font(.largeTitle)
-                .color(.orange)
+                    .foregroundColor(Color.orange )
                 
                 HStack{
                     Text(chosenLandmark.country)
